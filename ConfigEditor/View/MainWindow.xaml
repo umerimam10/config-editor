@@ -1,0 +1,12 @@
+﻿<Window x:Class="ConfigEditor.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Config Editor" Height="310" Width="410">
+    <Grid>
+        <Button x:Name="buttonAdd" Content="Add New Config" Command="{Binding AddConfigCommand}" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Height="65" Width="198"/>
+        <Button x:Name="buttonEdit" Content="Edit Config" Command="{Binding EditConfigCommand}" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Height="65" Width="198"/>
+    </Grid>
+</Window>
