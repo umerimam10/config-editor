@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Windows;
 using System.Windows.Input;
 using ConfigEditor.Helpers;
 using ConfigEditor.Model;
@@ -47,6 +48,7 @@ namespace ConfigEditor.ViewModel
                 return false;
             }
 
+            messageBox.Show("Config file has been successfully saved.", "Config file saved", MessageBoxButton.OK, MessageBoxImage.None);
             return true;
         }
     }
